@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SnapVote</string>
+    <string name="result" />
+    <string name="start_vote">Pick my vote!</string>
+    <string name="exit_app">Exit</string>
+    <string name="snap_page">Capture your vote!</string>
+    <string name="wheretosubmit">http://m-yl.us/lab/vote/poll/poll.php</string>
+    <string name="text">hello</string>
+
+</resources>

@@ -1,0 +1,26 @@
+SnapVote User Manual
+
+0. How to test whether our code works? 
+i. Create your own vote! Go to http://m-yl.us/lab/vote/poll/ Then fill in the form as instructed. Click on submit. You will see three links. Click on them respectively. Then you are all set!
+ii. Launch the application on your phone. Scan the QR Code. Then click on Submit. You can see your vote right after the page is loaded.
+iii. Note: You are probably experiencing some technical issues when creating polls on http://m-yl.us/lab/vote/poll/, this is because this single webpage is not executable on this particular server. You can create your vote by visiting this three links by substituting the corresponding parameters:
+
+http://m-yl.us/lab/vote/poll/poll/insert.php?topic='.$topic.'&nOption='.$nOption.'&option1='.$option1.'&option2='.$option2.'&option3='.$option3.'&option4='.$option4.'&option5='.$option5.'&poll_id='.$poll_id.'
+http://m-yl.us/lab/vote/poll/qrcodegen.php?size='.$size.'&poll_id='.$poll_id.'
+http://m-yl.us/lab/vote/poll/insert.php?poll_id='.$poll_id.'
+
+1. SnapVote is an app that allows user generate QR Codes for poll options and vote for the option by decoding the QR Code. This is a very handy and practical app for polls in parties or activities like satisfactory polls. 
+2. This includes an Android application based on Android 2.1 and a web-based poll control system written in PHP. 
+3. Environment Requirement: 
+
+Server Side: Basic PHP environment (Can run without MySQL database). 
+Android Side: Android 2.2or above with Camera resolution higher than 1 MP. 
+4. Note about Server Side:
+
+The default server is located at http://m-yl.us/lab/vote/poll/. If you have already set up your own server environment, you can change it by modifying the ¡°wheretosubmit¡± variable in /res/values/string.xml in Android side source code.
+5. This app uses the following external libraries/code:
+
+Android.google.zxing (FreeOpen Source QRCode Decoder)
+DRBPoll (Open Source Poll Management System)
+Google API (QRCode Encoder)
+6. This app is never possible without the help from http://www.stackoverflow.com
